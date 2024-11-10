@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 15px;
+    width: 100%;
+    max-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+main.container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+main.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #383737;
+}
+
+main.container .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    main.container .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+main.container .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main.container .timer img {
+    width: 30px;
+}
+
+main.container .timer span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #383737;
+}
+
+main.container .wrong-tries {
+    font-size: 18px;
+    font-weight: 600;
+    color: #383737;
+}
+
+main.container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+main.container .cards .card {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transition: all 1s;
+    transform-origin: right bottom;
+    cursor: pointer;
+}
+
+main.container .cards .card.active {
+    transform: translate(-100%) rotateY(180deg);
+}
+
+main.container .cards .card.same {
+    transform: translate(-100%) rotateY(180deg);
+    cursor: not-allowed;
+}
+
+main.container .cards .card.same .back {
+    filter: grayscale(0.7);
+}
+
+main.container .cards .card .face {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: fill;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+main.container .cards .card .back {
+    transform: rotateY(180deg);
+}
+
+main.container .control-button {
+    margin: 20px auto;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main.container button {
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+main.container .start-button {
+    background-color: #b45158;
+}
+
+main.container .start-button:hover {
+    background-color: #78373c;
+}
+
+main.container .stop-button {
+    background-color: #016064;
+}
+
+main.container .stop-button:hover {
+    background-color: #004a50;
+}
+
+main.container .reset-button {
+    background-color: #0c5391;
+}
+
+main.container .reset-button:hover {
+    background-color: #083a66;
+}

@@ -74,16 +74,16 @@ function clearBoard() {
   createInitialCards();
 }
 
-let cover = "../Assets/cover.png";
+let cover = "/Assets/cover.png";
 let images = [
-  "../Assets/image_0.png",
-  "../Assets/image_1.png",
-  "../Assets/image_2.png",
-  "../Assets/image_3.png",
-  "../Assets/image_4.png",
-  "../Assets/image_5.png",
-  "../Assets/image_6.png",
-  "../Assets/image_7.png",
+  "/Assets/image_0.png",
+  "/Assets/image_1.png",
+  "/Assets/image_2.png",
+  "/Assets/image_3.png",
+  "/Assets/image_4.png",
+  "/Assets/image_5.png",
+  "/Assets/image_6.png",
+  "/Assets/image_7.png",
 ];
 
 function shuffleImages() {

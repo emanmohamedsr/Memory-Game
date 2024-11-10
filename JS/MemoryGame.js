@@ -177,7 +177,7 @@ function timeIsUpMessage() {
     background: "#fff",
     backdrop: `
             rgb(0,0,0,0.5)
-            url("../Assets/bunny-sad.gif")
+            url("https://emanmohamedsr.github.io/Memory-Game/Assets/bunny-sad.gif")
             right bottom
             no-repeat
             `,
@@ -194,7 +194,7 @@ function winMessage() {
     background: "#fff",
     backdrop: `
             rgb(0,0,0,0.5)
-            url("../Assets/bunny-dance.gif")
+            url("https://emanmohamedsr.github.io/Memory-Game/Assets/bunny-dance.gif")
             right bottom
             no-repeat
             `,
